@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+# Echo contents before copying to debug
+echo "Contents of /autograder/submission/"
+ls -l /autograder/submission/
+
+cd /autograder/source
+python3 run_tests.py
+

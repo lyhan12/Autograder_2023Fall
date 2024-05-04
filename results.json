@@ -1,0 +1,128 @@
+{
+    "tests": [
+        {
+            "name": "test_gradient_derivation (tests.test_section_one.TestSectionOneTwo.test_gradient_derivation)",
+            "score": 0.0,
+            "max_score": 0.0,
+            "status": "passed",
+            "output": "\nMarkdown Cell 38:\n##### 2.1. Derive the gradients $\\frac{\\partial L}{\\partial\\theta_1},\n\\frac{\\partial L}{\\partial\\theta_2}$ (3 pts).\n----------------------------------------\nMarkdown Cell 39:\n  **Student Response** (preferred latex, equation must be readable)  First\nsubsititute \u0176i into the linear regression equation:  L = (1/n)\u2211 from i = 1 to n\n(\u03b81\u2217Xi+\u03b82\u2212Yi)^2  Then derive the gradients:  (\u2202L)/(\u2202\u03b81) = (2/n)\u2211 from i = 1 to n\n(\u03b81\u2217Xi+\u03b82\u2212Yi) * Xi  (\u2202L)/(\u2202\u03b82) = (2/n)\u2211 from i = 1 to n (\u03b81\u2217Xi+\u03b82\u2212Yi)\n----------------------------------------\n",
+            "number": "2.1"
+        },
+        {
+            "name": "test_implement_custom_model (tests.test_section_one.TestSectionOneTwo.test_implement_custom_model)",
+            "score": 8.0,
+            "max_score": 8.0,
+            "status": "passed",
+            "output": "\n",
+            "number": "2.2"
+        },
+        {
+            "name": "test_implement_polynomial_features (tests.test_section_one.TestSectionOneTwo.test_implement_polynomial_features)",
+            "score": 2.0,
+            "max_score": 2.0,
+            "status": "passed",
+            "output": "\n",
+            "number": "1.5"
+        },
+        {
+            "name": "test_linear_model_eval (tests.test_section_one.TestSectionOneTwo.test_linear_model_eval)",
+            "score": 2.0,
+            "max_score": 2.0,
+            "status": "passed",
+            "output": "\nDefined all:  True\nHas r2_score:  True\nHas mse:  True\nGood r2:  True\n",
+            "number": "1.3"
+        },
+        {
+            "name": "test_linear_model_eval_explanation (tests.test_section_one.TestSectionOneTwo.test_linear_model_eval_explanation)",
+            "score": 0.0,
+            "max_score": 0.0,
+            "status": "passed",
+            "output": "\nMarkdown Cell 17:\n##### 1.4. Discussion about the Evaluation Results. (2 pts)  TASK: Answer\nfollowing questions:  - Does our model working well for each dataset? Explain\nbased on the calculated metrics above. - Explain what $R^2$ coefficient is.\nDiscuss what it indicates about a model's performance when $R^2 =0 $ and $R^2 =\n1$\n----------------------------------------\nMarkdown Cell 18:\nitalicized text  *Your Answer Here!*  For the linear dataset: *   The MSE vals\nfor both the training and test sets are relatively low which indicates a good\nmodel performance in terms of prediction accuracy. *   The R2 coeff is high\n(close to 1) for both training and test sets which suggests that the model\nexplains a high percentage of the variance in the data ich indicates a strong\nfit of the model to the data.  For the convex dataset: *   The MSE vals are\nquite high for both training and test sets indicating that the model doesn't\nperform well in terms of prediction accuracy for this dataset. *   The R2 coeff\nis low for both training and test sets (close to 0) which suggests that model\ndoes not explain much of the variance in the data which indicates a poor fit of\nthe model to the data.  For trig dataset: *   The MSE vals are relatively low\ncompared to the convex dataset but higher than the linear dataset, indicating\nmoderat prediction accuracy. *   The R2 coeff is close to 0 for both training\nsets suggesting that the model does not explain much of the variance in the data\nindicating a weak fit of the model to the data.  R2 coeff measures the\nproportion of variance in the dep vars that is predicitable from the indep vars.\nWhen R2 is 0, it means that the model does not explain any of the variance in\nthe target var. When R2 is 1, it means that the model perfectly predicts the\ntarget var based on the indep vars capturing all the variance in the data.\n----------------------------------------\n",
+            "number": "1.4"
+        },
+        {
+            "name": "test_linear_regression (tests.test_section_one.TestSectionOneTwo.test_linear_regression)",
+            "score": 2.0,
+            "max_score": 2.0,
+            "status": "passed",
+            "output": "\nDefined all:  True\nMatching length:  True\nUse fit:  True\nUse predict:  True\n",
+            "number": "1.2"
+        },
+        {
+            "name": "test_mse_loss_function (tests.test_section_one.TestSectionOneTwo.test_mse_loss_function)",
+            "score": 1.0,
+            "max_score": 1.0,
+            "status": "passed",
+            "output": "\n",
+            "number": "3.3"
+        },
+        {
+            "name": "test_part_3_5 (tests.test_section_one.TestSectionOneTwo.test_part_3_5)",
+            "score": 0.0,
+            "max_score": 0.0,
+            "status": "passed",
+            "output": "\nMarkdown Cell 65:\n#### Part 5: What went wrong? (2 points) In the textbox below, explain why you\nthink this method of training the linear classifier from above Part 4 failed.\nShouldn't it have worked? What lessons should you take away from this for doing\nmachine learning in data science?   Try to write at least three sentences. The\nmore you write here, the better, as the purpose of this question is to encourage\n** deep thinking** about why our approach above didn't work. If you can support\nyour work with math, that'll make your answer even stronger!!\n----------------------------------------\nMarkdown Cell 66:\nThe method likely failed due to the simplicity of the linear model and the\ncomplexity of the data distribution. Linear models assume a linear relationship\nbetween features and target variables. In this case, the data distribution may\nnot be linearly separable, leading to poor classification performance.  To\nimprove this, I should consider using more sophisticated models that can capture\nnonlinear relationships, such as support vector machines (SVMs), decision trees,\nor neural networks. Additionally, feature engineering or using kernel methods\nwith SVMs can help transform the data into a more separable space, improving\nclassification accuracy.  In data science and machine learning, it's crucial to\nunderstand the assumptions and limitations of the chosen models and to explore\nvarious techniques to address complex data distributions for better model\nperformance.\n----------------------------------------\n",
+            "number": "3.5"
+        },
+        {
+            "name": "test_part_3_6 (tests.test_section_one.TestSectionOneTwo.test_part_3_6)",
+            "score": 0.0,
+            "max_score": 0.0,
+            "status": "passed",
+            "output": "\nMarkdown Cell 74:\n  #### Part 6: List some different kernels you found online, their names. (3\npoints)\n----------------------------------------\nMarkdown Cell 75:\n*Your Answer Here* *   Linear Kernel: K(x, y) = (x^T)y *   Polynomial Kernel:\nK(x, y) = ((x^T) + c)^d *   Sigmoid Kernel: K(x, y) = tanh(\u03b1(x^T)y + c) where \u03b1\nand c are constants\n----------------------------------------\n",
+            "number": "3.6"
+        },
+        {
+            "name": "test_part_bonus (tests.test_section_one.TestSectionOneTwo.test_part_bonus)",
+            "score": 0.0,
+            "max_score": 0.0,
+            "status": "passed",
+            "output": "\nMarkdown Cell 79:\n## Bonus Question: Calculate the Exact Solution to the Linear Regressor (5\npoints)\n----------------------------------------\nMarkdown Cell 80:\nDerive exact solution for $\\theta$ when $$L = \\frac{1}{N} (X \\theta - y)^T (X\n\\theta - y))$$\n----------------------------------------\nMarkdown Cell 81:\nThis is for multidimensional linear regression, and is the exact solution\noverall. Your answer should be the solution for $\\theta$ that results in the\n**minimal value for the loss**. This is ideally the value that all gradient\ndescent approaches would converge to during linear regression gradient descent.\n----------------------------------------\nMarkdown Cell 82:\n**Student response here** (preferred latex, equation must be readable)  X^T is\nthe transpose of T, with dimensions (d+1)xN  (X^T)X is the matrix product of X^T\nand X, with dimensions (d+1)x(d+1)  (X^T)y is the matrix product of X^T and y,\nwith dimensions (d+1)x1  We set the derivative to zero:  (\u2202L)/(\u2202\u03b8) = 0\n(\u2202L)/(\u2202\u03b8) = (2/N)((X^T)X\u03b8 - (X^T)y)  (2/N)((X^T)X\u03b8 - (X^T)y) = 0  (X^T)X\u03b8 -\n(X^T)y = 0  (X^T)X\u03b8 = (X^T)y  \u03b8 = ((X^T)^-1)((X^T)y)\n----------------------------------------\n",
+            "number": "4.1"
+        },
+        {
+            "name": "test_poly_model_explanation (tests.test_section_one.TestSectionOneTwo.test_poly_model_explanation)",
+            "score": 0.0,
+            "max_score": 0.0,
+            "status": "passed",
+            "output": "\nMarkdown Cell 27:\n##### 1.6. Discussion about the Evaluation Results. (2 pts)  TASK: Answer\nfollowing questions: - Does our model working well for each dataset? Explain\nbased on the calculated metrics above. - Let's play a little bit with\ndegree_linear, degree_convex, degree_tri. Is is always beneficial to use higher-\norder degree features? What is the difference of underfitting and overfitting?\n----------------------------------------\nMarkdown Cell 28:\n*Your Answer Here!*  For linear dataset w poly features: *   The model performs\nwell for both the training and test data as indicated by low vals and high R2\nscores. *   The R2 score of around 0.96 for the test data suggests that the\nmodel explains around 96% of the variance in the target var which is quite good.\nFor convex dataset w poly features: *   The model also performs well for this\ndataset w relatively low MSE vals and high R2 scores for both training and test\ndata. *   The R2 score of around 0.95 for the test data indicates a good level\nof explanation of the variance in the target variable.  For trig dataset w poly\nfeatures: *   The model performs well on the training data with a low MSE and\nhigh R2 score, indicating a good fit to the training data. *   However, on the\ntest data, the MSE is higher, and the R2 score drops to around 0.72, suggesting\nthat the model's performance decreases on unseen data. This could be a sign of\noverfitting.  It's not always beneficial to use higher-order degree features.\nWhile they can capture more complex relationships in the data, they also\nincrease the model's complexity, which can lead to overfitting.  Overfitting\noccurs when the model learns the training data too well, including noise and\noutliers, which can lead to poor generalization to unseen data.  Underfitting,\non the other hand, occurs when the model is too simple to capture the underlying\npatterns in the data, leading to poor performance on both training and test\ndata.\n----------------------------------------\n",
+            "number": "1.6"
+        },
+        {
+            "name": "test_prepare_train_test_splits (tests.test_section_one.TestSectionOneTwo.test_prepare_train_test_splits)",
+            "score": 2.0,
+            "max_score": 2.0,
+            "status": "passed",
+            "output": "\nDefined all:  True\nMatching length:  True\nUse split func:  True\n",
+            "number": "1.1"
+        },
+        {
+            "name": "test_ridge_lasso_regression (tests.test_section_one.TestSectionOneTwo.test_ridge_lasso_regression)",
+            "score": 3.0,
+            "max_score": 3.0,
+            "status": "passed",
+            "output": "\nDefined all:  True\nUse proper models:  True\nUse poly feat:  True\n",
+            "number": "1.7"
+        },
+        {
+            "name": "test_theta_init (tests.test_section_one.TestSectionOneTwo.test_theta_init)",
+            "score": 1.0,
+            "max_score": 1.0,
+            "status": "passed",
+            "output": "\n",
+            "number": "3.1"
+        },
+        {
+            "name": "test_train_custom_model (tests.test_section_one.TestSectionOneTwo.test_train_custom_model)",
+            "score": 4.0,
+            "max_score": 4.0,
+            "status": "passed",
+            "output": "\n",
+            "number": "2.3"
+        }
+    ],
+    "leaderboard": [],
+    "visibility": "visible",
+    "execution_time": "38.61",
+    "score": 25.0
+}
